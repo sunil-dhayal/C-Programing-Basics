@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>C programming by dark developers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user scalable=yes">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python
+,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,
+references,examples,exercises,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building 
+tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python,
+ Bootstrap, Java and XML.">
+<style>
+.headerdiv {
+	margin:0;
+	color:#f09050;
+	text-align:center;
+	font-family:courier;
+	border:0;
+	padding:0;
+}
+.footerdiv {
+	background-color:#666666;
+	margin:0;
+	color:white;
+	text-align:center;
+	border:0;
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  overflow: hidden;
+  background-color:#666666;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color:#00bfff;
+  font-size:20px;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  border:0;
+  margin:0;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;color:white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #dddddd;color:#ff1493;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-family:sarif;
+}
+.cpstyle {
+	padding:50px;
+	border:8px solid violet;
+	text-align:center;
+	margin:10px 0px;
+	background-color:#dddddd;
+	font-family:sarif;
+	border-collapse:collapsed;
+}
+.ACPstyle {
+	background-color:#ffff66;
+	border-left:5px solid #00dd00;
+	font-size:18px;
+}
+a:hover {
+	color:violet;
+}
+a:active {
+	color:red;
+}
+
+.solution {
+	border-left:10px solid red;
+	border-right:10px solid red;
+	background-color:#eeeeee;
+	height:100%;
+	width:100%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 47%;
+  z-index:99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#ff0000;
+  color: white;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background-color:blue;
+  color:white;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- header part start-->
+<div class="headerdiv">
+	<a title="dark developers"href="/home.htm">
+			<img src="logo.png" alt="Dark Developers" style="float:left!important;width:325px;height:40px;">
+	</a>
+	<div style="font-size:18px;float:right!important;margin:0;">
+	<b style="color:black;">Date: <span id="datetime"></span></b>
+	<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+	</script>
+	<br>
+	<b>A SITE DESIGNED FOR C PROGRAMMING PRACTICES</b>
+	</div>
+</div>
+<!-- header part end-->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- navigation part start-->
+<ul>
+  <li class="dropdown">
+  <a title="dark-developers-home" href="/home.htm" class="dropbtn">
+			HOME
+		</a>
+    <div class="dropdown-content">
+      <a href="/home.htm#AU">About Us</a>
+      <a href="/home.htm#AC">About Copyright</a>
+      <a href="/home.htm#PPAC">Privacy Policy</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-c-programming" href="/c-programming.htm" class="dropbtn">
+		C PROGRAMMING
+		</a>
+    <div class="dropdown-content">
+      <a href="/CPFB.htm">C Programs For Beginners</a>
+      <a href="/LO.htm">Logical Operators</a>
+      <a href="/CASC.htm">Conditional and Switch Case</a>
+	  <a href="/IS.htm">Iterative Statements</a>
+	  <a href="/PPP.htm">Pattern Producer Programs</a>
+	  <a href="/APF.htm">Array,Pointers and Functions</a>
+	  <a href="/SRP.htm">String Related Programs</a>
+	  <a href="/UAS.htm">Union And Structure</a>
+	  <a href="/FH.htm">File Handling</a>
+    </div>
+  </li>
+   <li class="dropdown">
+  <a title="dark-developers-sorting" href="/sorting.htm" class="dropbtn">
+			SORTING
+		</a>
+    <div class="dropdown-content">
+      <a href="/sorting.htm#BS">Bubble Sort</a>
+      <a href="/sorting.htm#InS">Insertion Sort</a>
+      <a href="/sorting.htm#SS">Selection Sort</a>
+      <a href="/sorting.htm#QS">Quick Sort</a>
+      <a href="/sorting.htm#MS">Merge Sort</a>
+      <a href="/sorting.htm#ShS">Shell Sort</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-data-structure" href="/dsa.htm" class="dropbtn">
+			DATA STRUCTURE
+			</a>
+    <div class="dropdown-content">
+      <a href="/dsa.htm#">This part is underdevelopment</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-data-analysis-and-algorithms" href="/daa.htm" class="dropbtn">
+		DESIGN AND ANALYSIS OF ALGORITHMS
+		</a>
+    <div class="dropdown-content">
+      <a href="/daa.htm#SATC">Different Sorting Complexity</a>
+      <a href="/daa.htm#LCSP">Longest Common Subsequence Problem</a>
+      <a href="/daa.htm#Knapsack">0/1 Knapsack Problem</a>
+      <a href="/daa.htm#MCMP">Matrix Chain Multiplication Problem</a>
+      <a href="/daa.htm#Assignment">Assignment Problem</a>
+      <a href="/daa.htm#NQueen">NQueen Problem</a>
+      <a href="/daa.htm#maxflow">Maximum Flow Problem</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-assembly-programming-nasm" href="/nasm.htm" class="dropbtn">
+		ASSEMBLY PROGRAMMING IN NASM
+		</a>
+    <div class="dropdown-content">
+      <a href="/nasm.htm#AO">Arithmetic Operations</a>
+      <a href="/nasm.htm#CS">Conditional Statements</a>
+      <a href="/nasm.htm#swap">Swap Two Numbers</a>
+      <a href="/nasm.htm#lea">Use Of Lea</a>
+      <a href="/nasm.htm#jt">Jump Table</a>
+      <a href="/nasm.htm#macro">Use Of Macro</a>
+    </div>
+  </li>
+</ul>
+<!-- navigation part end-->
+<div>
+<h1><b>DATA STRUCTURE</b></h1>
+<P style="font-size:18px;">This part is underdevelopment.</P>
+</div>
+
+<!-- footer part start -->
+<div class="footerdiv">
+	<h1 style="color:blue;">PRECAUTIONS</h1>
+	<b>
+	DarkDevelopers is designed for example practicing on different topics.Information ,data,and examples are
+	constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using 
+	this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+	</b>
+	<b><p style="color:#00dd00;">
+		Dark Developers<br>
+		Email - darkdevelopers63@gmail.com<br>
+		@2019 All Rights Reserved
+	</p></b>
+</div>
+<!-- footer part start -->
+</body>
+</html>
