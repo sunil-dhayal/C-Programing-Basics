@@ -1,0 +1,3 @@
+all:
+	nasm -f elf jump.asm
+	gcc -m32 jump.c jump.o

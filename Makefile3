@@ -1,0 +1,3 @@
+all:
+	nasm -f elf month.nsm
+	gcc -m32 month.c month.o
