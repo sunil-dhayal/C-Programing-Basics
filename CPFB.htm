@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>C programming by dark developers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user scalable=yes">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python
+,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,
+references,examples,exercises,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building 
+tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python,
+ Bootstrap, Java and XML.">
+<style>
+.headerdiv {
+	margin:0;
+	color:#f09050;
+	text-align:center;
+	font-family:courier;
+	border:0;
+	padding:0;
+}
+.footerdiv {
+	background-color:#666666;
+	margin:0;
+	color:white;
+	text-align:center;
+	border:0;
+	padding:20px;
+	font-family:courier;
+	font-size:18px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  overflow: hidden;
+  background-color:#666666;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color:#00bfff;
+  font-size:20px;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  border:0;
+  margin:0;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;color:white;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #dddddd;color:#ff1493;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-family:sarif;
+}
+.cpstyle {
+	padding:50px;
+	border:8px solid violet;
+	text-align:center;
+	margin:10px 0px;
+	background-color:#dddddd;
+	font-family:sarif;
+	border-collapse:collapsed;
+}
+.ACPstyle {
+	background-color:#ffff66;
+	border-left:5px solid #00dd00;
+	font-size:18px;
+}
+.quesstyle {
+	text-decoration:none;
+	color:black;
+	font-family:times new roman;
+	font-size:18px;
+}
+a:hover {
+	color:violet;
+}
+a:active {
+	color:red;
+}
+.solution {
+	border-left:10px solid red;
+	border-right:10px solid red;
+	background-color:#eeeeee;
+	height:100%;
+	width:100%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 47%;
+  z-index:99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#ff0000;
+  color: white;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background-color:blue;
+  color:white;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- header part start-->
+<div class="headerdiv">
+	<a title="dark developers"href="/home.htm">
+			<img src="logo.png" alt="Dark Developers" style="float:left!important;width:325px;height:40px;">
+	</a>
+	<div style="font-size:18px;float:right!important;margin:0;">
+	<b style="color:black;">Date: <span id="datetime"></span></b>
+	<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+	</script>
+	<br>
+	<b>A SITE DESIGNED FOR C PROGRAMMING PRACTICES</b>
+	</div>
+</div>
+<!-- header part end-->
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- navigation part start-->
+<ul>
+  <li class="dropdown">
+  <a title="dark-developers-home" href="/home.htm" class="dropbtn">
+			HOME
+		</a>
+    <div class="dropdown-content">
+      <a href="/home.htm#AU">About Us</a>
+      <a href="/home.htm#AC">About Copyright</a>
+      <a href="/home.htm#PPAC">Privacy Policy</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-c-programming" href="/c-programming.htm" class="dropbtn">
+		C PROGRAMMING
+		</a>
+    <div class="dropdown-content">
+      <a href="/CPFB.htm">C Programs For Beginners</a>
+      <a href="/LO.htm">Logical Operators</a>
+      <a href="/CASC.htm">Conditional and Switch Case</a>
+	  <a href="/IS.htm">Iterative Statements</a>
+	  <a href="/PPP.htm">Pattern Producer Programs</a>
+	  <a href="/APF.htm">Array,Pointers and Functions</a>
+	  <a href="/SRP.htm">String Related Programs</a>
+	  <a href="/UAS.htm">Union And Structure</a>
+	  <a href="/FH.htm">File Handling</a>
+    </div>
+  </li>
+  <li class="dropdown">
+  <a title="dark-developers-sorting" href="/sorting.htm" class="dropbtn">
+			SORTING
+		</a>
+    <div class="dropdown-content">
+      <a href="/sorting.htm#BS">Bubble Sort</a>
+      <a href="/sorting.htm#InS">Insertion Sort</a>
+      <a href="/sorting.htm#SS">Selection Sort</a>
+      <a href="/sorting.htm#QS">Quick Sort</a>
+      <a href="/sorting.htm#MS">Merge Sort</a>
+      <a href="/sorting.htm#ShS">Shell Sort</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-data-structure" href="/dsa.htm" class="dropbtn">
+			DATA STRUCTURE
+			</a>
+    <div class="dropdown-content">
+      <a href="/dsa.htm#">This part is underdevelopment</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-data-analysis-and-algorithms" href="/daa.htm" class="dropbtn">
+		DESIGN AND ANALYSIS OF ALGORITHMS
+		</a>
+    <div class="dropdown-content">
+      <a href="/daa.htm#SATC">Different Sorting Complexity</a>
+      <a href="/daa.htm#LCSP">Longest Common Subsequence Problem</a>
+      <a href="/daa.htm#Knapsack">0/1 Knapsack Problem</a>
+      <a href="/daa.htm#MCMP">Matrix Chain Multiplication Problem</a>
+      <a href="/daa.htm#Assignment">Assignment Problem</a>
+      <a href="/daa.htm#NQueen">NQueen Problem</a>
+      <a href="/daa.htm#maxflow">Maximum Flow Problem</a>
+    </div>
+  </li>
+  <li class="dropdown">
+	<a title="dark-developers-assembly-programming-nasm" href="/nasm.htm" class="dropbtn">
+		ASSEMBLY PROGRAMMING IN NASM
+		</a>
+    <div class="dropdown-content">
+      <a href="/nasm.htm#AO">Arithmetic Operations</a>
+      <a href="/nasm.htm#CS">Conditional Statements</a>
+      <a href="/nasm.htm#swap">Swap Two Numbers</a>
+      <a href="/nasm.htm#lea">Use Of Lea</a>
+      <a href="/nasm.htm#jt">Jump Table</a>
+      <a href="/nasm.htm#macro">Use Of Macro</a>
+    </div>
+  </li>
+</ul>
+<!-- navigation part end-->
+<div>
+	<h1><b>C PROGRAMMING</b></h1>
+	<h1><b>1.C Programs For Beginners</b></h1>
+	<P style="font-size:18px;">In it we included hello world,simple calculator like programs
+		that only needed printf ,scanf function and arithmetic operators.</P>
+	<h2>Examples(click on question to see the answer)</h2>
+	<p style="font-size:18px;color:red;">Note:First try to do it by yourself their after go for answer.</p>
+</div>
+<!--question part start -->
+<div>
+	<p style="width:80%">
+		<a class="quesstyle" href="#q1">1. Print Hello World.</a><br>
+		<a class="quesstyle" href="#q2">2. Wap to perform operations of a calculator (all primitive operations ‘+’, ‘-’, ‘*’, ‘/’ ).</a><br>
+		<a class="quesstyle" href="#q3">3. Wap to find out distance between two points e.g. (x1, y1) and (x2, y2).</a><br>
+		<a class="quesstyle" href="#q4">4. Temperature of a city in Fahrenheit degrees is input through the keyboard.
+		Write a program to convert this temperature into Centigrade degrees.</a><br>
+		<a class="quesstyle" href="#q5">5. The length & breadth of a rectangle and radius of a circle are input through the keyboard.
+		Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle.</a><br>
+		<a class="quesstyle" href="#q6">6. Wap to calculate simple and compound interest when rate, principal and time is given. </a><br>
+		<a class="quesstyle" href="#q7">7. Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic
+		salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary.</a><br>
+		<a class="quesstyle" href="#q8">8. If the marks obtained by a student in five different subjects are input through the keyboard,
+		find out the aggregate marks and percentage marks obtained by the student. Assume that the maximum marks 
+		that can be obtained by a student in each subject is 100.</a><br>
+		<a class="quesstyle" href="#q9">9. The distance between two cities (in km.) is input through the keyboard.
+		Write a program to convert and print this distance in meters, feet, inches and centimeters.</a><br>
+		<a class="quesstyle" href="#q10">10.If the total selling price of 15 items and the total profit earned on them is input through the keyboard,
+		write a program to find the cost price of one item.</a><br>
+		<a class="quesstyle" href="#q11">11.If a five-digit number is input through the keyboard, write a program to reverse the number.</a><br>
+		<a class="quesstyle" href="#q12">12. If lengths of three sides of a triangle are input through the keyboard, write a program to print area of the triangle.</a><br>
+		<a class="quesstyle" href="#q13">13.If a four-digit number is input through the keyboard, write a program to obtain the sum of the first and last digit of this number.</a><br>
+		<a class="quesstyle" href="#q14">14. Write a program to receive Cartesian co-ordinates(x,y) of a point and convert them into polar co-ordinates (r,q).</a><br>
+		<a class="quesstyle" href="#q15">15. If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator '%')</a><br>
+		<a class="quesstyle" href="#q16">16. Paper of size A0 has dimensions 1189mm x 841mm. Each subsequent size A(n) is defined as A(n-1) cut in half parallel to its shorter sides. 
+		Write a program to calculate and print paper sizes A0,A1,A2,A3,A4...A8 .</a><br>
+		<a class="quesstyle" href="#q17">17.In a town, the percentage of men is 52. The percentage of total literacy is 48. If total percentage of literate men is 35 of the total population, 
+		write a program to find the total number of illiterate men and women if the population of the town is 80,000.</a><br>
+		<a class="quesstyle" href="#q18">18. A cashier has currency notes of denominations 1, 2, 5, 10, 50 and 100. If the amount to be withdrawn is input through the keyboard, 
+		find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.</a><br>
+		<a class="quesstyle" href="#q19">19. Two variables a and b contain values 10 and 20. Write a program to interchange the ontents of a and b with using a third variable.</a><br>
+		<a class="quesstyle" href="#q20">20.Two variables a and b contain values 10 and 20. Write a program to interchange the ontents of a and b without using a third variable.</a><br>
+	</p>
+</div>
+<!--question part end -->
+<!-- solution part started -->
+<div style="width:80%">
+	<h2 id="q1">1. Print Hello World.</h2>
+	<iframe src="1.c" class="solution"></iframe>
+	<h2 id="q2">2. Wap to perform operations of a calculator (all primitive operations ‘+’, ‘-’, ‘*’, ‘/’ ). </h2>
+	<iframe src="2.c" class="solution"></iframe>
+	<h2 id="q3">3. Wap to find out distance between two points e.g. (x1, y1) and (x2, y2). </h2>
+	<iframe src="9.c" class="solution"></iframe>
+	<h2 id="q4">4. Temperature of a city in Fahrenheit degrees is input through the keyboard.
+		Write a program to convert this temperature into Centigrade degrees. </h2>
+	<iframe src="7.c" class="solution"></iframe>
+	<h2 id="q5">5. The length & breadth of a rectangle and radius of a circle are input through the keyboard.
+		Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle. </h2>
+	<iframe src="8.c" class="solution"></iframe>
+	<h2 id="q6">6. Wap to calculate simple and compound interest when rate, principal and time is given. </h2>
+	<iframe src="3a.c" style="width:48%" class="solution"></iframe>
+	<iframe src="3b.c" style="width:48%" class="solution"></iframe>
+	<h2 id="q7">7. Ramesh's basic salary is input through the keyboard. His dearness allowance is 40% of basic
+		salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary. </h2>
+	<iframe src="4.c" class="solution"></iframe>
+	<h2 id="q8">8. If the marks obtained by a student in five different subjects are input through the keyboard,
+		find out the aggregate marks and percentage marks obtained by the student. Assume that the maximum marks 
+		that can be obtained by a student in each subject is 100. </h2>
+	<iframe src="6.c" class="solution"></iframe>
+	<h2 id="q9">9. The distance between two cities (in km.) is input through the keyboard.
+		Write a program to convert and print this distance in meters, feet, inches and centimeters. </h2>
+	<iframe src="5.c" class="solution"></iframe>
+	<h2 id="q10">10.If the total selling price of 15 items and the total profit earned on them is input through the keyboard,
+		write a program to find the cost price of one item. </h2>
+	<iframe src="21.c" class="solution"></iframe>
+	<h2 id="q11">11.If a five-digit number is input through the keyboard, write a program to reverse the number. </h2>
+	<iframe src="11.c" class="solution"></iframe>
+	<h2 id="q12">12. If lengths of three sides of a triangle are input through the keyboard, write a program to print area of the triangle. </h2>
+	<iframe src="19.c" class="solution"></iframe>
+	<h2 id="q13">13.If a four-digit number is input through the keyboard, write a program to obtain the sum of the first and last digit of this number. </h2>
+	<iframe src="12.c" class="solution"></iframe>
+	<h2 id="q14">14. Write a program to receive Cartesian co-ordinates(x,y) of a point and convert them into polar co-ordinates (r,q). </h2>
+	<iframe src="20.c" class="solution"></iframe>
+	<h2 id="q15">15. If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits. (Hint: Use the modulus operator '%') </h2>
+	<iframe src="10.c" class="solution"></iframe>
+	<h2 id="q16">16. Paper of size A0 has dimensions 1189mm x 841mm. Each subsequent size A(n) is defined as A(n-1) cut in half parallel to its shorter sides. 
+		Write a program to calculate and print paper sizes A0,A1,A2,A3,A4...A8 . </h2>
+	<iframe src="17.c" class="solution"></iframe>
+	<h2 id="q17">17. In a town, the percentage of men is 52. The percentage of total literacy is 48. If total percentage of literate men is 35 of the total population, 
+		write a program to find the total number of illiterate men and women if the population of the town is 80,000. </h2>
+	<iframe src="13.c" class="solution"></iframe>
+	<h2 id="q18">18. A cashier has currency notes of denominations 1, 2, 5, 10, 50 and 100. If the amount to be withdrawn is input through the keyboard, 
+		find the total number of currency notes of each denomination the cashier will have to give to the withdrawer. </h2>
+	<iframe src="14.c" class="solution"></iframe>
+	<h2 id="q19">19. Two variables a and b contain values 10 and 20. Write a program to interchange the ontents of a and b with using a third variable. </h2>
+	<iframe src="15.c" class="solution"></iframe>
+	<h2 id="q20"> 20. Two variables a and b contain values 10 and 20. Write a program to interchange the ontents of a and b without using a third variable.</h2>
+	<iframe src="16.c" class="solution"></iframe>	
+
+</div>
+<!-- solution part ended -->
+<!-- footer part start -->
+<div class="footerdiv">
+	<h1 style="color:blue;">PRECAUTIONS</h1>
+	<b>
+	DarkDevelopers is designed for example practicing on different topics.Information ,data,and examples are
+	constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using 
+	this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+	</b>
+	<b><p style="color:#00dd00;">
+		Dark Developers<br>
+		Email - darkdevelopers63@gmail.com<br>
+		@2019 All Rights Reserved
+	</p></b>
+</div>
+<!-- footer part start -->
+</body>
+</html>
